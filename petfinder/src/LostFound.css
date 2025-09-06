@@ -1,0 +1,413 @@
+/* Lost & Found Page Styles */
+.lost-found-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ff6b6b;
+}
+
+.navbar-links a.active {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.login-btn {
+  background-color: #ff6b6b;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: #ff5252;
+}
+
+/* Main Content Styles */
+.lf-main {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  color: #ff6b6b;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Browse Section Styles */
+.lf-actions {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ff5252;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.lf-filters {
+  margin-bottom: 1.5rem;
+}
+
+.lf-filters select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Map Container Styles */
+.lf-map-container {
+  margin-bottom: 2rem;
+}
+
+.lf-map-container h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.map-popup {
+  max-width: 200px;
+}
+
+.map-popup h4 {
+  margin: 0.5rem 0;
+  color: #ff6b6b;
+}
+
+.map-popup p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Pets Grid Styles */
+.lf-pets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.lf-pet-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.lf-pet-card:hover {
+  transform: translateY(-5px);
+}
+
+.lf-pet-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.lf-pet-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lf-pet-type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.lf-pet-card.lost .lf-pet-type {
+  background-color: #ff6b6b;
+}
+
+.lf-pet-card.found .lf-pet-type {
+  background-color: #4caf50;
+}
+
+.lf-pet-info {
+  padding: 1rem;
+}
+
+.lf-pet-info h3 {
+  margin-top: 0;
+  color: #ff6b6b;
+}
+
+.lf-pet-info p {
+  margin: 0.5rem 0;
+}
+
+.lf-pet-description {
+  margin: 1rem 0 !important;
+  font-style: italic;
+  color: #666;
+}
+
+.lf-pet-actions {
+  margin-top: 1rem;
+}
+
+/* Form Styles */
+.lf-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lf-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.lf-type-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.toggle-option {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.toggle-option.active {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.location-preview-map {
+  margin-top: 0.5rem;
+}
+
+.image-preview {
+  margin-top: 0.5rem;
+}
+
+.image-preview img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 3rem 0 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #ff6b6b;
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #ff6b6b;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .navbar-links {
+    display: none; /* In a real app, you'd have a mobile menu here */
+  }
+}
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.location-preview-map {
+  margin-bottom: 1rem;
+}
+
+.map-instructions {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-top: 0.5rem;
+}
+
+.coordinates {
+  font-size: 0.875rem;
+  color: #28a745;
+  margin-top: 0.5rem;
+  font-family: monospace;
+}

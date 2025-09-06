@@ -1,0 +1,156 @@
+.blog-post-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.blog-post-main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.blog-post {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.post-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.post-category {
+  display: inline-block;
+  background-color: #4e9af1;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-image {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.post-content h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+.post-content h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.8rem;
+  color: #333;
+}
+
+.post-content p {
+  margin-bottom: 1.2rem;
+}
+
+.post-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.author-bio {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 3rem 0;
+  border-left: 4px solid #4e9af1;
+}
+
+.author-bio h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.post-navigation {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.newsletter-section {
+  background-color: #f0f7ff;
+  padding: 3rem 0;
+  margin-top: 3rem;
+}
+
+.newsletter-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .post-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
